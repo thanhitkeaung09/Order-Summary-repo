@@ -1,0 +1,63 @@
+
+$theme-colors:(
+        "primary":hsl(224, 23%, 55%),//Pale blue
+        "secondary":hsl(245, 75%, 52%),//Bright blue
+  //"white":hsl(0, 0%, 100%),
+        "white":hsl(225, 100%, 98%),//Very pale blue
+        //"warning":,//Desaturated blue
+        "danger":hsl(223, 47%, 23%)//dark-blue
+);
+
+$body-bg:hsl(225, 100%, 94%);
+$border-radius:15px;
+//$btn-border-radius:10px;
+$btn-border-radius-lg:10px;
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+$font-family-sans-serif: 'Red Hat Display', sans-serif;
+
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/animate.css";
+
+
+
+
+p{
+  font-size: 16px !important;
+
+}
+h4{
+  font-size: 26px !important;
+
+}
+.card{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+transition: 0.5s;
+}
+.card:hover{
+  animation:pulse;
+  animation-duration: 1s;
+}
+
+.card-inner-box{
+  padding: 10px 15px;
+  background-color: #ebf0fda1;
+  box-shadow: rgb(0 0 0 / 10%) 0px 1px 2px 0px;
+}
+.change{
+  transition: 0.5s;
+}
+.change:hover{
+  color: var(--bs-danger) !important;
+  text-decoration: none;
+  font-weight: bold;
+
+}
+.cancel-order{
+  transition: 0.5s;
+
+}
+.cancel-order:hover{
+  color: var(--bs-danger) !important;
+  text-decoration: none;
+  font-weight: bold;
+}
